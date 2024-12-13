@@ -1,0 +1,50 @@
+############################################################################
+#                                                                          #
+#                          NoCreeperExplosion                              #
+#                                                                          #
+# Made by: lolnypop                                                        #
+# Bug Reports: https://github.com/FahianR/NoCreeperExplosion/issues        #
+# Source Code: https://github.com/FahianR/NoCreeperExplosion               #
+#                                                                          #
+############################################################################
+
+# Should creeper explosions destroy blocks?
+# If false, all creepers will no longer destroy anything upon exploding, but they will still deal damage.
+# Default set to 'false'
+creeper-explosion-grief: false
+
+# Should creeper explosions deal damage to entities other than players?
+# Dictates if creeper explosions will do any damage to entities (Players are NOT counted).
+# Default set to 'true'
+creeper-damages-entities: true
+
+# Should creeper explosions deal damage to tamed animals?
+# If false, creepers will no longer deal any damage to animals that have been tamed by a Player.
+# For example, a wolf tamed by a Player will receive no damage from creeper explosions.
+# List of tamed animals that are protected by this value:
+#  -> [Wolf, Cat, Camel, Donkey, Horse, Llama, Mule, Parrot, Skeleton Horse, Trader Llama]
+# NOTE: THE ANIMAL HAS TO BE TAMED BY A PLAYER IN ORDER TO BE PROTECTED FROM CREEPER EXPLOSIONS.
+# Default set to 'true'
+creeper-damages-pets: true
+
+# Should creeper explosions deal damage to Players?
+# Dictates if creeper explosions will do any damage to Players (Other entities are NOT counted).
+# Default set to 'true'
+creeper-damages-players: true
+
+# Should creeper spawning be disabled altogether?
+# Completely disables creepers from spawning in the world with the plugin.
+# Default set to 'false'
+disable-creeper-spawning: false
+
+# Should creeper aggression be disabled?
+# This will make creepers no longer aggressive towards Players. Although, they will still be considered as hostile mobs in Minecraft.
+# Creepers will be neutral. They will no longer explode or get primed when targeting players.
+# Default set to 'false'
+disable-creeper-aggression: false
+
+
+# You have to reload the plugin configuration OR restart the server after making changes to the config file for it to work!
+# Otherwise, the changes you made won't be implemented into the server.
+# The command for reloading the plugin configuration is '/nocreeperexplosion reload'.
+# Permission: nocreeperexplosion.reload

@@ -1,0 +1,17 @@
+name: NoCreeperExplosion
+version: ${project.version}
+main: com.zitemaker.noCreeperExplosion.NoCreeperExplosion
+api-version: 1.21
+
+author: lolnypop
+description: Provides options to configure creeper behaviors in your world.
+
+commands:
+  nocreeperexplosion:
+    description: Reloads the configuration file of the NoCreeperExplosion plugin.
+    usage: /nocreeperexplosion reload
+  permissions:
+    nocreeperexplosion.reload:
+      description: Allows the player to reload the NoCreeperExplosion plugin's configuration file.
+      default: op
+
