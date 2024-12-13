@@ -1,4 +1,4 @@
-<h1>Duels</h1> 
+<h1>NoCreeperExplosion</h1> 
 
 A plugin for Minecraft that provides options to change creeper behaviors.
 
