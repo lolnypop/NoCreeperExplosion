@@ -1,11 +1,11 @@
-package com.zitemaker.noCreeperExplosion;
+package me.lolnypop.noCreeperExplosion;
 
+import me.lolnypop.noCreeperExplosion.Commands.ReloadCommand;
+import me.lolnypop.noCreeperExplosion.Listeners.CreeperListeners;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class NoCreeperExplosion extends JavaPlugin implements Listener {
-
-    private static NoCreeperExplosion plugin;
 
     // ANSI color code for green
     private static final String ANSI_GREEN = "\u001B[92m";
@@ -22,8 +22,6 @@ public final class NoCreeperExplosion extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
 
-        plugin = this;
-
         // Plugin startup success message
         getLogger().info(ANSI_GREEN + "NoCreeperExplosion.jar v" + getDescription().getVersion() + " has been enabled successfully" + ANSI_RESET);
 
@@ -32,11 +30,11 @@ public final class NoCreeperExplosion extends JavaPlugin implements Listener {
         saveDefaultConfig();
 
         // Register the event listeners
-        getServer().getPluginManager().registerEvents(new CreeperListeners(), this);
+        getServer().getPluginManager().registerEvents(new CreeperListeners(this), this);
 
         // Register commands
-        getCommand("nocreeperexplosion").setExecutor(new ReloadCommand());
-        getCommand("nocreeperexplosion").setTabCompleter(new ReloadCommand());
+        getCommand("nocreeperexplosion").setExecutor(new ReloadCommand(this));
+        getCommand("nocreeperexplosion").setTabCompleter(new ReloadCommand(this));
     }
 
     @Override
@@ -45,9 +43,4 @@ public final class NoCreeperExplosion extends JavaPlugin implements Listener {
         // Plugin disable success message
         getLogger().info(ANSI_RED + "NoCreeperExplosion.jar v" + getDescription().getVersion() + " has been disabled successfully" + ANSI_RESET);
     }
-
-    public static NoCreeperExplosion getPlugin() {
-        return plugin;
-    }
 }
-

@@ -1,5 +1,6 @@
-package com.zitemaker.noCreeperExplosion;
+package me.lolnypop.noCreeperExplosion.Listeners;
 
+import me.lolnypop.noCreeperExplosion.NoCreeperExplosion;
 import org.bukkit.event.EventHandler;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
@@ -10,11 +11,14 @@ import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.entity.EntityTargetEvent;
-import org.bukkit.plugin.Plugin;
 
 public class CreeperListeners implements Listener {
 
-    private final Plugin plugin = NoCreeperExplosion.getPlugin();
+    private final NoCreeperExplosion plugin;
+
+    public CreeperListeners(NoCreeperExplosion plugin) {
+        this.plugin = plugin;
+    }
 
     // Disables creeper griefing
     @EventHandler

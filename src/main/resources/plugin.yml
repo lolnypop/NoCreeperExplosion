@@ -1,6 +1,6 @@
 name: NoCreeperExplosion
 version: ${project.version}
-main: com.zitemaker.noCreeperExplosion.NoCreeperExplosion
+main: me.lolnypop.noCreeperExplosion.NoCreeperExplosion
 api-version: 1.21
 
 author: lolnypop
