@@ -10,6 +10,7 @@ commands:
   nocreeperexplosion:
     description: Reloads the configuration file of the NoCreeperExplosion plugin.
     usage: /nocreeperexplosion reload
+
   permissions:
     nocreeperexplosion.reload:
       description: Allows the player to reload the NoCreeperExplosion plugin's configuration file.

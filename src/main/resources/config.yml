@@ -15,8 +15,8 @@ creeper-explosion-grief: false
 
 # Should creeper explosions deal damage to entities other than players?
 # Dictates if creeper explosions will do any damage to entities (Players are NOT counted).
-# Default set to 'true'
-creeper-damages-entities: true
+# Default set to 'false'
+creeper-damages-entities: false
 
 # Should creeper explosions deal damage to tamed animals?
 # If false, creepers will no longer deal any damage to animals that have been tamed by a Player.
@@ -24,8 +24,8 @@ creeper-damages-entities: true
 # List of tamed animals that are protected by this value:
 #  -> [Wolf, Cat, Camel, Donkey, Horse, Llama, Mule, Parrot, Skeleton Horse, Trader Llama]
 # NOTE: THE ANIMAL HAS TO BE TAMED BY A PLAYER IN ORDER TO BE PROTECTED FROM CREEPER EXPLOSIONS.
-# Default set to 'true'
-creeper-damages-pets: true
+# Default set to 'false'
+creeper-damages-pets: false
 
 # Should creeper explosions deal damage to Players?
 # Dictates if creeper explosions will do any damage to Players (Other entities are NOT counted).
