@@ -10,7 +10,7 @@ public final class NoCreeperExplosion extends JavaPlugin implements Listener {
     // ANSI color code for green
     private static final String ANSI_GREEN = "\u001B[92m";
     private static final String ANSI_RESET = "\u001B[0m";
-    private static final String ANSI_RED = "\\e[0;31m";
+    private static final String ANSI_RED = "\u001B[31m";
 
     @Override
     public void onLoad() {

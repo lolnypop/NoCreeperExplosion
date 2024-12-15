@@ -14,6 +14,7 @@ public class ReloadCommand implements TabExecutor {
 
     private static final String ANSI_GREEN = "\u001B[92m";
     private static final String ANSI_RESET = "\u001B[0m";
+    private static final String ANSI_RED = "\u001B[31m";
 
     private final NoCreeperExplosion plugin;
 
@@ -44,7 +45,7 @@ public class ReloadCommand implements TabExecutor {
         // Show correct usage after incorrect arguments
         if (sender instanceof Player) {
             sender.sendMessage(ChatColor.RED + "Usage: /nocreeperexplosion reload");
-        } else plugin.getLogger().info("Usage: /nocreeperexplosion reload");
+        } else plugin.getLogger().info(ANSI_RED + "Usage: /nocreeperexplosion reload");
 
         return true;
     }
