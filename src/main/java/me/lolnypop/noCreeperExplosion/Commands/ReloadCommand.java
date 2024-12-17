@@ -25,6 +25,8 @@ public class ReloadCommand implements TabExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
+        if (!sender.hasPermission("nocreeperexplosion.reload")) { return true; }
+
         // Check arguments
         if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
 

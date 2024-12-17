@@ -15,4 +15,3 @@ commands:
     nocreeperexplosion.reload:
       description: Allows the player to reload the NoCreeperExplosion plugin's configuration file.
       default: op
-
